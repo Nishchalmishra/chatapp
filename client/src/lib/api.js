@@ -1,6 +1,6 @@
 // utils/api.js
 
-const BASE_URL = "http://localhost:5000/api";
+const BASE_URL = "https://chatapp-sm0i.onrender.com/api";
 
 const apiRequest = async ({
     endpoint,
