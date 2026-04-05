@@ -91,7 +91,8 @@ function ChatPage() {
         //         </div>
         //     </BorderAnimatedContainer>
         // </div>
-        <div className="relative w-full max-w-6xl h-screen">
+        // <div className="relative w-full max-w-6xl h-screen">
+        <div className="relative w-full h-screen md:max-w-6xl md:mx-auto">
             <BorderAnimatedContainer>
                 {/* LEFT */}
                 <div
