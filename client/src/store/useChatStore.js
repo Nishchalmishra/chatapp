@@ -121,7 +121,7 @@ export const useChatStore = create((set, get) => ({
 
         if (!socket) return;
 
-        // console.log("✅ Subscribed to messages");
+        console.log("✅ Subscribed to messages");
 
         // 🔥 remove old listeners (VERY IMPORTANT)
         socket.off("newMessage");
