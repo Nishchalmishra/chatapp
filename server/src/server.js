@@ -21,7 +21,7 @@ app.use(express.json({
 app.use(cookieParser())
 app.use(
     cors({
-        origin: "https://e1ebdee5.chatapp-8lw.pages.dev",
+        origin: "https://chatapp-8lw.pages.dev",
         credentials: true,
         headers: ["Content-Type", "Authorization"],
     }),
