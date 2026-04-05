@@ -19,11 +19,13 @@ app.use(express.json({
     limit: "50mb"
 }))
 app.use(cookieParser())
-app.use(cors({
-    origin: "https://c58b4541.chatapp-8lw.pages.dev/",
-    credentials: true,
-    headers: ["Content-Type", "Authorization"],
-}))
+app.use(
+    cors({
+        origin: "https://e1ebdee5.chatapp-8lw.pages.dev",
+        credentials: true,
+        headers: ["Content-Type", "Authorization"],
+    }),
+);
 app.use((err, req, res, next) => {
     console.error(err.stack);
 
