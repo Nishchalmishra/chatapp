@@ -8,7 +8,9 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: "https://chatapp-8lw.pages.dev",
+        origin: [
+            "https://chatapp-8lw.pages.dev",
+            "http://localhost:5173",],
         credentials: true,
         headers: ["Content-Type", "Authorization"],
     },

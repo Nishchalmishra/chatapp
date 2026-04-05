@@ -38,7 +38,8 @@ const ProfileHeader = () => {
     // console.log(isUpdatingProfile)
 
     return (
-        <div className="p-6 border-b border-slate-700/50">
+        // <div className="p-6 border-b border-slate-700/50">
+        <div className="p-4 md:p-6 border-b border-slate-700/50">
             <div className="flex items-center justify-between">
                 <div className="flex items-center gap-3">
                     <div className="avatar online">
@@ -112,6 +113,12 @@ const ProfileHeader = () => {
                         ) : (
                             <VolumeOffIcon className="size-5" />
                         )}
+                    </button>
+                    <button
+                        onClick={() => setActiveChat(null)}
+                        className="md:hidden p-2"
+                    >
+                        ⬅
                     </button>
                 </div>
             </div>
