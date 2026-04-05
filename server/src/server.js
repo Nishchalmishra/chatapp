@@ -20,7 +20,7 @@ app.use(express.json({
 }))
 app.use(cookieParser())
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://c58b4541.chatapp-8lw.pages.dev/",
     credentials: true,
     headers: ["Content-Type", "Authorization"],
 }))

@@ -8,11 +8,11 @@ const server = http.createServer(app)
 
 const io = new Server(server, {
     cors: {
-        origin: "http://localhost:5173",
+        origin: "https://c58b4541.chatapp-8lw.pages.dev/",
         credentials: true,
         headers: ["Content-Type", "Authorization"],
-    }
-})
+    },
+});
 
 io.use(socketAuthMiddleware)
 
