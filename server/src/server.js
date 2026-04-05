@@ -36,6 +36,10 @@ app.use((err, req, res, next) => {
 app.use("/api/auth", authRoute)
 app.use("/api/message", messageRoute)
 
+app.get("/", (req, res) => {
+    res.send("Server is alive 😌");
+});
+
 if (process.env.NODE_ENV == "production") {
     app.use(express.static(path.join(__dirname, "../client/dist")))
 
