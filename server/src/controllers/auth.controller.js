@@ -136,6 +136,7 @@ export const userLogin = asyncHandler(async (req, res) => {
         const options = {
             httpOnly: true,
             secure: true,
+            sameSite: "None",
         };
 
         user[0].refreshToken = refreshToken;
